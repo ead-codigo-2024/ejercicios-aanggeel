@@ -1,0 +1,58 @@
+<div class="banner">
+    <div class="banner__body">
+      <span>Educación</span>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, natus?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum corporis impedit nobis provident a consequuntur molestias cum atque nulla magni asperiores illum alias tenetur voluptates, et omnis, magnam sapiente.</p>
+    </div>
+    <div class="banner__access">
+      <div class="access">
+        <img src="https://placehold.co/400x400">
+        <a href="#">Talleres y cursos</a>
+      </div>
+      <div class="access">
+        <img src="https://placehold.co/400x400">
+        <a href="#">Salidas de esparcimiento</a>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin-inline:auto;
+    gap: 100px;
+    padding: 2rem;
+    background-color: lightblue;
+    border-radius: 2rem;
+    font-family: "arial";
+    }
+    .access{
+      text-align:center;
+    }
+    .banner__access {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+     
+    }
+    img{
+      max-width: 100%;
+      border-radius: 50%;
+      margin-inline: auto;
+      margin-bottom: 1rem;
+      
+    }
+    @media (min-width: 700px) {
+      .banner{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+      gap: 2rem;
+      }
+      .banner__access {
+     display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2fr;
+    }
+    }  
