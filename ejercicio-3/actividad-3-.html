@@ -1,0 +1,124 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="news-section">
+        <h2>Te contamos <span class="highlight">—</span></h2>
+        <div class="news-grid">
+            <!-- Card 1 -->
+            <div class="news-card">
+                <span class="category">Iglesia</span>
+                <img src="iglesia.jpg" alt="Imagen noticia 1" class="news-image">
+                <h3>Rector UC</h3>
+                <p>La dignidad primero</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="news-card">
+                <span class="category">Tecnología</span>
+                <img src="sistemas digitales.png" alt="Imagen noticia 2" class="news-image">
+                <h3>UC lanza nueva plataforma digital</h3>
+                <p>Para impulsar la ciberseguridad</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="news-card">
+                <span class="category">Elección de Rector</span>
+                <img src="rector.png" alt="Imagen noticia 3" class="news-image">
+                <h3>Gran Canciller de la UC nombra...</h3>
+                <p>A los cuatro miembros que se integran al Comité de Búsqueda</p>
+            </div>
+        </div>
+        <a href="#" class="view-all">Ver todas las noticias</a>
+    </section>
+
+</body>
+</html>
+
+<style> 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .news-section {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .highlight {
+        color: #f7b500;
+    }
+    
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    .news-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .news-card .category {
+        background-color: #1a73e8;
+        color: white;
+        padding: 5px 10px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    
+    .news-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    h3 {
+        font-size: 18px;
+        margin: 15px 0 10px;
+    }
+    
+    p {
+        font-size: 14px;
+        color: #555;
+    }
+    
+    .view-all {
+        display: block;
+        margin: 20px 0;
+        text-align: right;
+        font-size: 14px;
+        color: #1a73e8;
+        text-decoration: none;
+    }
+    
+    .view-all:hover {
+        text-decoration: underline;
+    }
+    </style>

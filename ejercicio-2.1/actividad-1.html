@@ -1,58 +1,68 @@
 <div class="banner">
-    <div class="banner__body">
-      <span>Educación</span>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, natus?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum corporis impedit nobis provident a consequuntur molestias cum atque nulla magni asperiores illum alias tenetur voluptates, et omnis, magnam sapiente.</p>
-    </div>
-    <div class="banner__access">
-      <div class="access">
-        <img src="https://placehold.co/400x400">
-        <a href="#">Talleres y cursos</a>
-      </div>
-      <div class="access">
-        <img src="https://placehold.co/400x400">
-        <a href="#">Salidas de esparcimiento</a>
-      </div>
-    </div>
+  <div class="banner__body">
+    <span>Ángel Pizarro</span>
+    <h2>¿Quién soy?</h2>
+    <p>Hola!  Me llamo Ángel y tengo 19 años, actualmente vivo en Viña del Mar pero nací en Antofagasta. Soy estudiante de Diseño en la Pontificia Universidad Católica de Valparaíso y en este momento trabajo en el Laboratorio de Creación Gráfica en la Escuela de Arquitectura y Diseño.
+    </p>
   </div>
-  
-  <style>
-  .banner {
+  <div class="banner__access">
+    <div>
+        <img src="recurso-1.png" alt="Donde Vengo">
+        <a href="https://maps.app.goo.gl/jVNtLcLN7RpGrk658" target="_blank">Donde Vengo</a>
+        
+    </div>
+    <div>
+        <img src="recurso-2.png" alt="Laboratorio de Creación Gráfica">
+        
+        <a href="https://www.ead.pucv.cl/espacios/laboratorios/laboratorio-de-creacion-grafica/" target="_blank">Laboratorio de Creación Gráfica</a>
+        
+    </div>
+</div>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+
+<style>
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+  margin-inline:auto;
+  gap: 100px;
+  padding: 2rem;
+  background-color: lightblue;
+  border-radius: 2rem;
+  font-family: "Suse";
+  background-color: #94c5e0;
+  }
+  .access{
+    text-align:center;
+  }
+  .banner__access {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 900px;
-    margin-inline:auto;
-    gap: 100px;
-    padding: 2rem;
-    background-color: lightblue;
-    border-radius: 2rem;
-    font-family: "arial";
-    }
-    .access{
-      text-align:center;
+    gap: 2rem;
+   
+  }
+  img{
+    max-width: 90%;
+    border-radius: 0%;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    
+  }
+  @media (min-width: 700px) {
+    .banner{
+      display: grid;
+      grid-template-columns:1fr 1fr;
+    gap: 2rem;
     }
     .banner__access {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-     
-    }
-    img{
-      max-width: 100%;
-      border-radius: 50%;
-      margin-inline: auto;
-      margin-bottom: 1rem;
-      
-    }
-    @media (min-width: 700px) {
-      .banner{
-        display: grid;
-        grid-template-columns:1fr 1fr;
-      gap: 2rem;
-      }
-      .banner__access {
-     display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2fr;
-    }
-    }  
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2fr;
+  }
+  }  
