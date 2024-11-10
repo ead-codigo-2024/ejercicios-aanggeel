@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Diseño desde el Código</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <style>
+        /* Fondo con gradiente de azul a blanco */
+        body {
+            font-family: 'Jersey 10', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #003366, #ffffff);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        /* Estilo de la barra de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0066cc;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            margin: 0 10px;
+            font-size: 2rem;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            transition: background-color 0.3s, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #004d99;
+            transform: scale(1.1);
+        }
+
+        /* Estilo para el cuadro con enlaces 1, 2 y 3 */
+        .cuadro-enlaces {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 300px;
+        }
+
+        .cuadro-enlaces a {
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            font-size: 3rem;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s ease;
+        }
+
+        .cuadro-enlaces a:hover {
+            background-color: #0066cc;
+            transform: scale(1.1);
+        }
+
+        /* Estilo para la lista de contacto */
+        .contacto {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background-color: #f1f1f1;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .contacto li {
+            margin: 0 15px;
+        }
+
+        .contacto li a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .contacto li a:hover {
+            color: #004d99;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Ejercicios Diseño desde el Código</h1>
+    </header>
+
+    <!-- Cuadro con enlaces 1, 2, 3 -->
+    <div class="cuadro-enlaces">
+        <a href="ejercicio-1/index.html">1</a>
+        <a href="ejercicio-2.1/actividad-1.html">2</a>
+        <a href="ejercicio-3/actividad-3-.html">3</a>
+        <a href="ejercicio-4/actividad-4.html">4</a>
+    </div>
+
+    <!-- Lista de contacto (en la parte inferior) -->
+    <ul class="contacto">
+        <li><a href="mailto:angel.pizarro.c@mail.pucv.cl">Escríbeme 💋</a></li>
+        <li><a href="tel:+56959088252">Llámame</a></li>
+    </ul>
+
+</body>
+</html>
